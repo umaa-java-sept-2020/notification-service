@@ -1,5 +1,20 @@
 # notification-service
 
+# Maven In 5 Minutes
+
+https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
+
+# Skip below content. It is for refrence only to create project using terminal.
+```shell
+mvn archetype:generate \
+-DgroupId=com.uuv \
+-DartifactId=file-upload-service \
+-Dversion=1.1.0-SNAPSHOT \
+-DarchetypeArtifactId=maven-archetype-quickstart \
+-DarchetypeVersion=1.4 \
+-DinteractiveMode=false 
+
+```
 * Due to Junit dependency (testing framework) we are seeing 2 additional jars in the left panel.
 * We added junit as a dependency but it is bringing hamcrest jar also, so it is called transitive dependency.
 
