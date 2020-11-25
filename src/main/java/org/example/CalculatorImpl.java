@@ -15,7 +15,7 @@ public class CalculatorImpl implements ICalculator {
 
     @Override
     public int div(int x, int y) {
-        if(y == 0)
+        if(y == 0) // branching statement
             return y;
         return x / y;
     }

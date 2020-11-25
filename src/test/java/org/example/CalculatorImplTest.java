@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 public class CalculatorImplTest {
 
     @Test
-    @Ignore // dont want to run this test case
+   // @Ignore // dont want to run this test case
     public void sum() {
         ICalculator calculator = new CalculatorImpl();
         int result = calculator.sum(10,20);
@@ -29,5 +29,12 @@ public class CalculatorImplTest {
         ICalculator calculator = new CalculatorImpl();
         int result = calculator.div(10,0);
         Assert.assertEquals(0, result);
+    }
+
+    @Test
+    public void mul() {
+        ICalculator calculator = new CalculatorImpl();
+        int result = calculator.mul(10,2);
+        Assert.assertEquals(20, result);
     }
 }
